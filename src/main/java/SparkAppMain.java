@@ -18,7 +18,7 @@ public class SparkAppMain {
         JavaSparkContext sparkContext = new JavaSparkContext(sparkConf);
         JavaRDD<String> stringJavaRDD = sparkContext.textFile("./temp/nationalparks.csv");
         System.out.println("Number of lines in file = " + stringJavaRDD.count());
-
+        System.out.println("Hi");
     }
 
 }
